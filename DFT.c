@@ -3,17 +3,17 @@
 #include <string.h>
 #include <math.h>
  
-#define PI 3.141592653589793     // ‰~ü—¦
+#define PI 3.141592653589793     // å††å‘¨ç‡
 
 int main(int argc, char *argv[])
 {  
 	
 	int k, n, N;
-    int max = 20000;  // “Ç‚İ‚Şƒf[ƒ^”‚ÌãŒÀ
+    int max = 20000;  // èª­ã¿è¾¼ã‚€ãƒ‡ãƒ¼ã‚¿æ•°ã®ä¸Šé™
     double f[max+1], re, im, a;
 
     FILE *fp1, *fp2;
-    // ƒtƒ@ƒCƒ‹ƒI[ƒvƒ“(ƒt[ƒŠƒG•ÏŠ·‚µ‚½‚¢ƒf[ƒ^ƒtƒ@ƒCƒ‹, ƒt[ƒŠƒG•ÏŠ·Œã‚Ìƒf[ƒ^•Û‘¶—pƒtƒ@ƒCƒ‹)
+    // ãƒ•ã‚¡ã‚¤ãƒ«ã‚ªãƒ¼ãƒ—ãƒ³(ãƒ•ãƒ¼ãƒªã‚¨å¤‰æ›ã—ãŸã„ãƒ‡ãƒ¼ã‚¿ãƒ•ã‚¡ã‚¤ãƒ«, ãƒ•ãƒ¼ãƒªã‚¨å¤‰æ›å¾Œã®ãƒ‡ãƒ¼ã‚¿ä¿å­˜ç”¨ãƒ•ã‚¡ã‚¤ãƒ«)
     if((fp1=fopen(argv[1],"r"))==NULL){
         printf("Input File can not open\n");
     	system("pause"); 
@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 		N++;
 	}
 	
-    //À”•”•ª‚Æ‹•”•”•ª‚É•ª‚¯‚Äƒt[ƒŠƒG•ÏŠ·
+    //å®Ÿæ•°éƒ¨åˆ†ã¨è™šæ•°éƒ¨åˆ†ã«åˆ†ã‘ã¦ãƒ•ãƒ¼ãƒªã‚¨å¤‰æ›
     for(n=0; n<N; n++) {
         double re = 0.;
         double im = 0.;
@@ -46,7 +46,7 @@ int main(int argc, char *argv[])
 
     fclose(fp1);
     fclose(fp2);
-	//”CˆÓ‚ÌƒL[“ü—Í‚ÅI—¹
+	//ä»»æ„ã®ã‚­ãƒ¼å…¥åŠ›ã§çµ‚äº†
 	//printf("\n");
 	//system("pause"); 
     return 0;

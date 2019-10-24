@@ -3,12 +3,12 @@
 #include <string.h>
 #include <math.h>
  
-#define pi 3.1415926535         // ‰~ü—¦
+#define pi 3.1415926535         // å††å‘¨ç‡
 
 int main(int argc, char *argv[])
 {  
 	int i, k, n, N, a;
-	int max = 20000;  // “Ç‚İ‚Şƒf[ƒ^”‚ÌãŒÀ
+	int max = 20000;  // èª­ã¿è¾¼ã‚€ãƒ‡ãƒ¼ã‚¿æ•°ã®ä¸Šé™
 	double Re[max+1], Im[max+1], re, im, b;
 
 	FILE *fp1, *fp2;
@@ -24,15 +24,15 @@ int main(int argc, char *argv[])
 		system("pause"); 
 		return -1;
 	}
-	//ƒf[ƒ^‚Ì“Ç‚İ‚İ
+	//ãƒ‡ãƒ¼ã‚¿ã®èª­ã¿è¾¼ã¿
 	for(N=0;N<max;N++) {
 	        if(fscanf(fp1,"%d, %lf, %lf, %lf", &i, &Re[N], &Im[N], &b) == EOF) {
 	                N--;
 	                break;
 	        }
 	}
-	printf("ƒf[ƒ^”F%d\n\n", N);
-	printf("nŸ¬•ª‚Ü‚Å‚ğ‡¬\n");
+	printf("ãƒ‡ãƒ¼ã‚¿æ•°ï¼š%d\n\n", N);
+	printf("næ¬¡æˆåˆ†ã¾ã§ã‚’åˆæˆ\n");
 	printf("n=");
 	scanf("%d", &a);
 	
@@ -42,7 +42,7 @@ int main(int argc, char *argv[])
 		return -1;
 	}
 	
-	//À”•”•ª‚Æ‹•”•”•ª‚É•ª‚¯‚Ä‹tƒt[ƒŠƒG•ÏŠ·
+	//å®Ÿæ•°éƒ¨åˆ†ã¨è™šæ•°éƒ¨åˆ†ã«åˆ†ã‘ã¦é€†ãƒ•ãƒ¼ãƒªã‚¨å¤‰æ›
 	for(k=0; k<N; k++) {
 	        double re = 0.0;
 	        double im = 0.0;
