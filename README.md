@@ -1,1 +1,1 @@
-# Discrete-Fourier-transform
+# 離散フーリエ変換
